@@ -19,6 +19,12 @@ html {
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: #fff5f0;
 }
 
 .header__menu {
