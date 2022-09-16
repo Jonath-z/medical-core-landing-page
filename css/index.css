@@ -252,11 +252,6 @@ html {
 /* Media query */
 
 @media screen and (max-width: 700px) {
-  .header {
-    justify-content: space-between;
-    padding: 2rem 2rem;
-  }
-
   .header__auth {
     display: none;
   }
@@ -264,13 +259,6 @@ html {
   .home__presentation__auth {
     display: flex;
     gap: 10px;
-  }
-
-  .header_menu-icon {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    color: black;
   }
 
   .header__nav__list {
