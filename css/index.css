@@ -90,7 +90,7 @@ html {
 
 .home__presentation {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-items: flex-start;
   max-width: 80%;
   margin: 0 auto;
@@ -99,14 +99,14 @@ html {
 
 .home__presentation-header {
   font-size: medium;
-}
-
-.color-primary {
-  color: #1ba0ab;
   font-weight: bold;
 }
 
-.home__presentation-desc {
+.home__presentation-header--color-primary {
+  color: #1ba0ab;
+}
+
+.home__presentation-description {
   font-size: 4rem;
   margin: 0;
 }
@@ -269,7 +269,7 @@ html {
     grid-template-columns: 5fr 1fr;
   }
 
-  .home__presentation-desc {
+  .home__presentation-description {
     font-size: 25px;
   }
 
