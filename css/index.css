@@ -34,25 +34,25 @@ html {
   gap: 20px;
 }
 
-.header_menu-icon {
+.header__menu-icon {
   display: none;
 }
 
-.header__menu__logo {
+.header__logo {
   font-size: larger;
 }
 
-.header__nav__list {
+.header__nav {
   display: flex;
   gap: 10px;
   list-style-type: none;
 }
 
-.header__nav__list__item {
+.header__item {
   color: #737373;
 }
 
-.header__nav__list__item--active {
+.header__item--active {
   color: black;
   font-weight: bold;
 }
@@ -88,7 +88,7 @@ html {
   color: white;
 }
 
-.home__presentation {
+.presentation {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: flex-start;
@@ -97,24 +97,29 @@ html {
   padding: 8rem 0;
 }
 
-.home__presentation-header {
+.presentation__header {
   font-size: medium;
   font-weight: bold;
 }
 
-.home__presentation-header--color-primary {
+.presentation__header--color-primary {
   color: #1ba0ab;
 }
 
-.home__presentation-description {
+.presentation__description {
   font-size: 4rem;
   margin: 0;
 }
 
-.home__presentation-slogant {
+.presentation__slogant {
   color: #737373;
   margin: 0;
   padding: 2rem 0;
+}
+
+.presentation__btn {
+  display: flex;
+  gap: 10px;
 }
 
 .products {
@@ -146,34 +151,41 @@ html {
   font-stretch: expanded;
 }
 
-.product__desc__title--hight-light {
+.title--top-outlined {
   border-top: 4px solid #e74040;
   padding: 1rem 0;
 }
 
-.paragraph__desc {
+.product__description {
   color: #737373;
   width: 25rem;
 }
 
-.paragraph__desc--center {
+.product__description--center {
   text-align: center;
 }
 
-.link {
+.product__link {
   color: #1ba0ab;
   font-size: small;
   font-weight: bolder;
   cursor: pointer;
 }
 
-.teams-container {
+.team {
   max-width: 75%;
   margin: 0 auto;
 }
 
+.team__link {
+  color: #1ba0ab;
+  font-size: small;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
 .team__description {
-  width: unset;
+  color: #737373;
 }
 
 .card-container {
@@ -205,13 +217,13 @@ html {
   text-align: center;
 }
 
-.card__name__description {
+.card__description {
   text-align: center;
   color: #737373;
   font-size: small;
 }
 
-.card__vectors__container {
+.card__vectors-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -228,6 +240,22 @@ html {
   align-items: center;
 }
 
+.footer__link {
+  color: #1ba0ab;
+  font-size: small;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.footer__description {
+  color: #737373;
+  width: 25rem;
+}
+
+.footer__description--center {
+  text-align: center;
+}
+
 .footer__btn {
   padding: 10px 20px;
   border: none;
@@ -235,12 +263,17 @@ html {
   border-bottom-right-radius: 0.3rem;
 }
 
+.footer__btn--active {
+  background-color: #1ba0ab;
+  color: white;
+}
+
 .footer__form {
   display: flex;
   padding: 2rem 0;
 }
 
-.input {
+.footer__input {
   width: 30rem;
   border: 1px solid #e0e0e0;
   outline: none;
@@ -256,26 +289,31 @@ html {
     display: none;
   }
 
-  .home__presentation__auth {
-    display: flex;
-    gap: 10px;
-  }
-
-  .header__nav__list {
+  .header__nav {
     display: none;
   }
 
-  .home__presentation {
-    grid-template-columns: 5fr 1fr;
+  .presentation {
+    grid-template-columns: 1fr;
   }
 
-  .home__presentation-description {
+  .presentation__description {
     font-size: 25px;
+  }
+
+  .presentation__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .products {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .product__description {
+    width: unset;
   }
 
   .products__image {
@@ -288,7 +326,7 @@ html {
     gap: 1rem;
   }
 
-  .teams-container {
+  .team {
     max-width: 100%;
     padding: 0 2rem;
   }
@@ -301,7 +339,7 @@ html {
     max-width: 100%;
   }
 
-  .paragraph__desc {
+  .footer__description {
     width: 100%;
   }
 
@@ -317,7 +355,7 @@ html {
     justify-content: center;
   }
 
-  .input {
+  .footer__input {
     width: 100%;
     padding: 1rem 10px;
     border-radius: 5px;
@@ -329,11 +367,11 @@ html {
 }
 
 @media screen and (min-width: 700px) and (max-width: 1024px) {
-  .header__nav__list {
+  .header__nav {
     display: none;
   }
 
-  .home__presentation {
+  .presentation {
     grid-template-columns: 3fr 1fr;
   }
 
